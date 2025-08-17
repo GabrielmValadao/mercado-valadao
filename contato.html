@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Mercado Valadão</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mercado Valadão</h1>
+      <p>Sua compra mais próxima de você!</p>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="hortifruti.html">Hortifruti</a></li>
+          <li><a href="mercearia.html">Mercearia</a></li>
+          <li><a href="limpeza.html">Limpeza</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Entre em Contato</h2>
+        <p>
+          Estamos sempre prontos para atendê-lo. Entre em contato conosco
+          através dos canais abaixo.
+        </p>
+      </section>
+
+      <section>
+        <h3>Informações de Contato</h3>
+
+        <address>
+          <h4>Mercado Valadão</h4>
+          <p>
+            <strong>Endereço:</strong> Rua das Flores, 123 - Centro<br />
+            CEP: 96810-000 - Santa Cruz do Sul/RS
+          </p>
+
+          <p><strong>Telefone:</strong> (51) 3333-4444</p>
+          <p><strong>WhatsApp:</strong> (51) 99999-8888</p>
+          <p><strong>Email:</strong> contato@mercadovaladao.com.br</p>
+        </address>
+      </section>
+
+      <section>
+        <h3>Horários de Atendimento</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Período</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Segunda a Sábado</td>
+              <td>8h às 20h</td>
+            </tr>
+            <tr>
+              <td>Domingo</td>
+              <td>8h às 18h</td>
+            </tr>
+            <tr>
+              <td>Feriados</td>
+              <td>Consultar funcionamento</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>Formulário de Contato</h3>
+        <form>
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <br /><br />
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" />
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Mensagem</legend>
+
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione um assunto</option>
+              <option value="duvida">Dúvida sobre produtos</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="reclamacao">Reclamação</option>
+              <option value="delivery">Delivery</option>
+              <option value="cartao">Cartão Fidelidade</option>
+              <option value="outros">Outros</option>
+            </select>
+
+            <br /><br />
+
+            <label for="mensagem">Sua mensagem:</label>
+            <br />
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              cols="50"
+              required
+              placeholder="Digite sua mensagem aqui..."
+            ></textarea>
+          </fieldset>
+
+          <br />
+
+          <button type="submit">Enviar Mensagem</button>
+          <button type="reset">Limpar Formulário</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>Localização</h3>
+        <p>
+          Estamos localizados no centro de Santa Cruz do Sul, com fácil acesso e
+          estacionamento disponível.
+        </p>
+
+        <h4>Como Chegar:</h4>
+        <ul>
+          <li>De ônibus: Linhas 01, 03 e 05 - Parada Centro</li>
+          <li>De carro: Rua das Flores, próximo ao Banco do Brasil</li>
+          <li>A pé: 5 minutos da Praça da Bandeira</li>
+        </ul>
+
+        <p>
+          <strong>Estacionamento gratuito</strong> para clientes na lateral do
+          mercado.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h3>Informações de Contato</h3>
+        <address>
+          Mercado Valadão<br />
+          Endereço: Rua das Flores, 123 - Centro<br />
+          Telefone: (51) 3333-4444<br />
+          Email: contato@mercadovaladao.com.br
+        </address>
+      </section>
+
+      <nav>
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <p>&copy; 2025 Mercado Valadão. Todos os direitos reservados.</p>
+        <p>
+          Desenvolvido por: Gabriel Metzdorf Valadão - Análise e Desenvolvimento
+          de Sistemas - PUC/RS
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
