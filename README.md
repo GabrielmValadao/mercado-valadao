@@ -10,9 +10,9 @@ O projeto apresenta uma estrutura completa de um minimercado, incluindo catálog
 
 ### Páginas Principais
 
-- \*\*index.html
-- \*\*hortifruti.html
-- \*\*mercearia.html
-- \*\*limpeza.html
-- \*\*servicos.html
-- \*\*contato.html
+- index.html
+- hortifruti.html
+- mercearia.html
+- limpeza.html
+- servicos.html
+- contato.html
