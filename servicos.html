@@ -7,173 +7,244 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
-
     <title>Serviços - Mercado Valadão</title>
   </head>
   <body>
-    <header>
-      <h1>Mercado Valadão</h1>
-      <p>Sua compra mais próxima de você!</p>
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="hortifruti.html">Hortifruti</a></li>
-          <li><a href="mercearia.html">Mercearia</a></li>
-          <li><a href="limpeza.html">Limpeza</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html">MiniMercado</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMain"
+            aria-controls="navMain"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navMain" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hortifruti.html">Hortifruti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mercearia.html">Mercearia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="limpeza.html">Limpeza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Nossos Serviços</h2>
-        <p>
+    <main class="py-4">
+      <!-- Intro -->
+      <section class="container mb-4">
+        <h2 class="h4 mb-1">Nossos Serviços</h2>
+        <p class="text-muted mb-0">
           Oferecemos serviços especiais para facilitar suas compras e economizar
           seu tempo.
         </p>
       </section>
 
-      <section>
-        <h3>Serviços Disponíveis</h3>
+      <!-- Cards de serviços -->
+      <section class="container">
+        <h3 class="h5 mb-3">Serviços Disponíveis</h3>
+        <div class="row g-4">
+          <!-- Delivery -->
+          <div class="col-12 col-lg-6">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h4 class="h6 card-title mb-2">Serviço de Delivery</h4>
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Serviço de Delivery"
+                  width="200"
+                  height="250"
+                  class="img-fluid rounded mb-3 d-block mx-auto"
+                />
+                <p class="mb-2">
+                  Entregamos suas compras no conforto da sua casa com agilidade
+                  e segurança. Nossos entregadores são treinados para manter a
+                  qualidade dos produtos.
+                </p>
+                <h5 class="h6">Detalhes do Serviço</h5>
+                <ul class="mb-2">
+                  <li><strong>Taxa de entrega: R$ 5,00</strong></li>
+                  <li><strong>Pedido mínimo: R$ 30,00</strong></li>
+                  <li>Horário: Segunda a Sábado, 8h às 20h</li>
+                  <li>Domingo: 8h às 18h</li>
+                  <li>Tempo médio de entrega: 45 minutos</li>
+                  <li>Raio de atendimento: 5km do mercado</li>
+                </ul>
+                <p class="mb-0">
+                  <strong>Como solicitar:</strong> Ligue para (51) 3333-4444 ou
+                  envie WhatsApp
+                </p>
+              </div>
+            </article>
+          </div>
 
-        <article>
-          <h4>Serviço de Delivery</h4>
-          <img
-            src="data:image/jpeg;base64,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"
-            alt="Serviço de Delivery"
-            width="200"
-            height="250"
-          />
-          <p>
-            Entregamos suas compras no conforto da sua casa com agilidade e
-            segurança. Nossos entregadores são treinados para manter a qualidade
-            dos produtos.
-          </p>
-
-          <h5>Detalhes do Serviço:</h5>
-          <ul>
-            <li><strong>Taxa de entrega: R$ 5,00</strong></li>
-            <li><strong>Pedido mínimo: R$ 30,00</strong></li>
-            <li>Horário de funcionamento: Segunda a Sábado, 8h às 20h</li>
-            <li>Domingo: 8h às 18h</li>
-            <li>Tempo médio de entrega: 45 minutos</li>
-            <li>Raio de atendimento: 5km do mercado</li>
-          </ul>
-
-          <p>
-            <strong>Como solicitar:</strong> Ligue para (51) 3333-4444 ou envie
-            WhatsApp
-          </p>
-        </article>
-
-        <article>
-          <h4>Cartão Fidelidade Valadão</h4>
-          <img
-            src="https://www.smartid.com.br/wp-content/uploads/2022/12/cartao-fidelidade-supermercados_87-18-754.jpg"
-            alt="Cartão Fidelidade"
-            width="200"
-            height="250"
-          />
-          <p>
-            Programa de fidelidade que recompensa sua preferência pelo Mercado
-            Valadão. Acumule pontos e ganhe descontos nas suas próximas compras.
-          </p>
-
-          <h5>Benefícios do Cartão:</h5>
-          <ul>
-            <li><strong>Adesão totalmente gratuita</strong></li>
-            <li>
-              <strong
-                >A cada R$ 100,00 em compras, ganhe R$ 5,00 de desconto</strong
-              >
-            </li>
-            <li>Promoções exclusivas para portadores do cartão</li>
-            <li>Desconto especial no seu aniversário (10%)</li>
-            <li>Acúmulo de pontos em todas as compras</li>
-            <li>Validade dos pontos: 12 meses</li>
-          </ul>
-
-          <p>
-            <strong>Como aderir:</strong> Cadastre-se gratuitamente no balcão de
-            atendimento apresentando RG e CPF
-          </p>
-        </article>
+          <!-- Cartão Fidelidade -->
+          <div class="col-12 col-lg-6">
+            <article class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h4 class="h6 card-title mb-2">Cartão Fidelidade Valadão</h4>
+                <img
+                  src="https://www.smartid.com.br/wp-content/uploads/2022/12/cartao-fidelidade-supermercados_87-18-754.jpg"
+                  alt="Cartão Fidelidade"
+                  width="200"
+                  height="250"
+                  class="img-fluid rounded mb-3 d-block mx-auto"
+                />
+                <p class="mb-2">
+                  Programa de fidelidade que recompensa sua preferência pelo
+                  Mercado Valadão. Acumule pontos e ganhe descontos nas suas
+                  próximas compras.
+                </p>
+                <h5 class="h6">Benefícios do Cartão</h5>
+                <ul class="mb-2">
+                  <li><strong>Adesão totalmente gratuita</strong></li>
+                  <li>
+                    <strong
+                      >A cada R$ 100,00 em compras, ganhe R$ 5,00 de
+                      desconto</strong
+                    >
+                  </li>
+                  <li>Promoções exclusivas para portadores do cartão</li>
+                  <li>Desconto especial no seu aniversário (10%)</li>
+                  <li>Acúmulo de pontos em todas as compras</li>
+                  <li>Validade dos pontos: 12 meses</li>
+                </ul>
+                <p class="mb-0">
+                  <strong>Como aderir:</strong> Cadastre-se gratuitamente no
+                  balcão de atendimento apresentando RG e CPF
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section>
-        <h3>Horários de Funcionamento</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Dia da Semana</th>
-              <th>Horário</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Segunda-feira</td>
-              <td>8h às 20h</td>
-            </tr>
-            <tr>
-              <td>Terça-feira</td>
-              <td>8h às 20h</td>
-            </tr>
-            <tr>
-              <td>Quarta-feira</td>
-              <td>8h às 20h</td>
-            </tr>
-            <tr>
-              <td>Quinta-feira</td>
-              <td>8h às 20h</td>
-            </tr>
-            <tr>
-              <td>Sexta-feira</td>
-              <td>8h às 20h</td>
-            </tr>
-            <tr>
-              <td>Sábado</td>
-              <td>8h às 20h</td>
-            </tr>
-            <tr>
-              <td>Domingo</td>
-              <td>8h às 18h</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Horários -->
+      <section class="container mt-5">
+        <h3 class="h5 mb-3">Horários de Funcionamento</h3>
+        <div class="table-responsive">
+          <table class="table table-striped align-middle mb-0">
+            <thead>
+              <tr>
+                <th>Dia da Semana</th>
+                <th>Horário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Segunda-feira</td>
+                <td>8h às 20h</td>
+              </tr>
+              <tr>
+                <td>Terça-feira</td>
+                <td>8h às 20h</td>
+              </tr>
+              <tr>
+                <td>Quarta-feira</td>
+                <td>8h às 20h</td>
+              </tr>
+              <tr>
+                <td>Quinta-feira</td>
+                <td>8h às 20h</td>
+              </tr>
+              <tr>
+                <td>Sexta-feira</td>
+                <td>8h às 20h</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>8h às 20h</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>8h às 18h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <section>
-        <h3>Informações de Contato</h3>
-        <address>
-          Mercado Valadão<br />
-          Endereço: Rua das Flores, 123 - Centro<br />
-          Telefone: (51) 3333-4444<br />
-          Email: contato@mercadovaladao.com.br
-        </address>
-      </section>
+    <footer class="border-top mt-5">
+      <div class="container py-4">
+        <div class="row gy-4 gx-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <section>
+              <h3 class="h6 mb-2">Informações de Contato</h3>
+              <address class="mb-0">
+                Mercado Valadão<br />
+                Endereço: Rua das Flores, 123 - Centro<br />
+                Telefone: (51) 3333-4444<br />
+                Email: contato@mercadovaladao.com.br
+              </address>
+            </section>
+          </div>
 
-      <nav>
-        <h3>Links Úteis</h3>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+          <div class="col-12 col-md-6 col-lg-4">
+            <nav>
+              <h3 class="h6 mb-2">Links Úteis</h3>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a
+                    class="link-body-emphasis text-decoration-none"
+                    href="index.html"
+                    >Início</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-body-emphasis text-decoration-none"
+                    href="servicos.html"
+                    >Serviços</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-body-emphasis text-decoration-none"
+                    href="contato.html"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-      <section>
-        <p>&copy; 2025 Mercado Valadão. Todos os direitos reservados.</p>
-        <p>
-          Desenvolvido por: Gabriel Metzdorf Valadão - Análise e Desenvolvimento
-          de Sistemas - PUC/RS
-        </p>
-      </section>
+          <div class="col-12 col-lg-4">
+            <section>
+              <p class="mb-1">
+                &copy; 2025 Mercado Valadão. Todos os direitos reservados.
+              </p>
+              <p class="mb-0">
+                Desenvolvido por: Gabriel Metzdorf Valadão - Análise e
+                Desenvolvimento de Sistemas - PUC/RS
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
